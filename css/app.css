@@ -41,8 +41,27 @@
       border-left: 1px solid rgba(53, 166, 153, 0.75); }
       .topbar .settings .notifications i {
         color: white; }
+      .topbar .settings .notifications:hover {
+        background-color: #e4f6f4; }
+        .topbar .settings .notifications:hover i {
+          color: #333333; }
+    .topbar .settings .account-wrapper {
+      position: relative;
+      float: right; }
+      .topbar .settings .account-wrapper:hover {
+        background-color: #e4f6f4; }
+        .topbar .settings .account-wrapper:hover a {
+          color: #333333; }
+        .topbar .settings .account-wrapper:hover .account#my-account-link:after {
+          content: '\f0d7';
+          font-size: 14px;
+          padding-left: 5px;
+          color: #333333;
+          font-family: "FontAwesome"; }
+        .topbar .settings .account-wrapper:hover .account-dropdown {
+          display: block; }
     .topbar .settings .account {
-      float: right;
+      position: relative;
       height: 50px;
       color: white;
       padding: 14px;
@@ -51,11 +70,39 @@
       .topbar .settings .account a {
         color: white;
         text-decoration: none; }
-      .topbar .settings .account:after {
+      .topbar .settings .account #my-account-link:after {
         content: '\f0d7';
         font-size: 14px;
         padding-left: 5px;
         font-family: "FontAwesome"; }
+    .topbar .settings .account-dropdown {
+      position: absolute;
+      display: none;
+      top: 100%;
+      right: 0%;
+      border-right: 1px solid rgba(53, 166, 153, 0.75);
+      border-left: 1px solid rgba(53, 166, 153, 0.75);
+      border-bottom: 1px solid rgba(53, 166, 153, 0.75);
+      padding: 0;
+      margin: 0;
+      box-shadow: 0px 5px 5px #e2e2e2; }
+      .topbar .settings .account-dropdown > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #e4f6f4;
+        width: 200px; }
+        .topbar .settings .account-dropdown > ul > li {
+          padding: 10px 10px;
+          text-align: left; }
+          .topbar .settings .account-dropdown > ul > li i {
+            margin-left: 10px;
+            margin-right: 10px; }
+          .topbar .settings .account-dropdown > ul > li a {
+            color: #333333;
+            text-decoration: none; }
+          .topbar .settings .account-dropdown > ul > li:hover {
+            background: #bdeae5; }
 
 .sidebar {
   top: 50;
