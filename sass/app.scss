@@ -1,3 +1,69 @@
-a {
-  font-size: 18px;
+@import "bootstrap/variables";
+
+$mint: #49c5b7;
+
+.sidebar {
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #f1f5f7;
+  border-right: 1px solid rgba(0,0,0,0.05);
+  position: fixed;
+
+  .user-heading {
+    padding: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+
+    img {
+      margin-left: 20px;
+      float: left;
+    }
+    h4 {
+      margin-left: 15px;
+      margin-top: 15px;
+      float: left;
+    }
+  }
+
+  nav.navigation {
+
+    ul.side-menu {
+      padding-left: 0px;
+      list-style-type: none;
+    }
+
+    li.menu-item {
+      list-style: none;
+      padding: 15px 0px 15px 30px;
+      margin: 10px 0px;
+
+      &:hover {
+        background-color: white;
+      }
+
+      &.active {
+        background-color: #fdfeff;
+
+        a {
+          color: #434343;
+          font-weight: 700;
+        }
+      }
+
+      a {
+        color: #808080;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+
+  }
 }
