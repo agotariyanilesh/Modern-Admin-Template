@@ -1,5 +1,64 @@
+.topbar {
+  height: 50px;
+  width: 100%;
+  background-color: #49c5b7; }
+  .topbar .logo {
+    float: left;
+    width: 220px;
+    height: 50px;
+    border-right: 1px solid rgba(53, 166, 153, 0.75); }
+  .topbar .search {
+    float: left;
+    color: #e4f6f4;
+    margin: 8px 15px; }
+    .topbar .search input[type="search"] {
+      background-color: transparent;
+      color: #e4f6f4;
+      text-align: left;
+      font-size: 1.3em;
+      border: none; }
+      .topbar .search input[type="search"]::-webkit-input-placeholder {
+        color: #e4f6f4; }
+      .topbar .search input[type="search"]:-moz-input-placeholder {
+        /* Firefox 18- */
+        color: #e4f6f4; }
+      .topbar .search input[type="search"]::-moz-input-placeholder {
+        /* Firefox 19+ */
+        color: #e4f6f4; }
+      .topbar .search input[type="search"]:-ms-input-placeholder {
+        color: #e4f6f4; }
+    .topbar .search > i {
+      margin-right: 15px; }
+  .topbar .settings {
+    height: 50px;
+    float: right;
+    margin-right: 50px; }
+    .topbar .settings .notifications {
+      float: right;
+      height: 50px;
+      padding: 15px 15px;
+      vertical-align: middle;
+      border-left: 1px solid rgba(53, 166, 153, 0.75); }
+      .topbar .settings .notifications i {
+        color: white; }
+    .topbar .settings .account {
+      float: right;
+      height: 50px;
+      color: white;
+      padding: 14px;
+      border-left: 1px solid rgba(53, 166, 153, 0.75);
+      border-right: 1px solid rgba(53, 166, 153, 0.75); }
+      .topbar .settings .account a {
+        color: white;
+        text-decoration: none; }
+      .topbar .settings .account:after {
+        content: '\f0d7';
+        font-size: 14px;
+        padding-left: 5px;
+        font-family: "FontAwesome"; }
+
 .sidebar {
-  top: 0;
+  top: 50;
   left: 0;
   width: 220px;
   height: 100%;
@@ -7,7 +66,7 @@
   border-right: 1px solid rgba(0, 0, 0, 0.05);
   position: fixed; }
   .sidebar .user-heading {
-    padding: 50px 0px;
+    padding: 30px 0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -39,3 +98,16 @@
       text-decoration: none; }
     .sidebar nav.navigation li.menu-item i {
       margin-right: 10px; }
+  .sidebar .logout {
+    width: 220px;
+    text-align: center;
+    position: fixed;
+    bottom: 25px;
+    left: 0px; }
+    .sidebar .logout a {
+      color: #808080;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .sidebar .logout a:hover {
+        color: #434343;
+        text-shadow: 0px 0px 10px silver; }
