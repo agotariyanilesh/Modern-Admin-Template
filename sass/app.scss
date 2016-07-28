@@ -18,7 +18,7 @@ $topbar-border: 1px solid transparentize(darken($mint, 10%), 0.25);
   .search {
     float: left;
     color: lighten($mint, 40%);
-    margin: 8px 15px;
+    margin: 7px 15px;
 
     input[type="search"] {
       background-color: transparent;
@@ -26,6 +26,8 @@ $topbar-border: 1px solid transparentize(darken($mint, 10%), 0.25);
       text-align: left;
       font-size: 1.3em;
       border: none;
+
+      height: 35px;
 
       &::-webkit-input-placeholder {
         color: lighten($mint, 40%);

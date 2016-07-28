@@ -10,13 +10,14 @@
   .topbar .search {
     float: left;
     color: #e4f6f4;
-    margin: 8px 15px; }
+    margin: 7px 15px; }
     .topbar .search input[type="search"] {
       background-color: transparent;
       color: #e4f6f4;
       text-align: left;
       font-size: 1.3em;
-      border: none; }
+      border: none;
+      height: 35px; }
       .topbar .search input[type="search"]::-webkit-input-placeholder {
         color: #e4f6f4; }
       .topbar .search input[type="search"]:-moz-input-placeholder {
